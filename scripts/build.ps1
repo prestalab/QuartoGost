@@ -265,8 +265,8 @@ try {
     Invoke-QuartoRender -Source $source -To "pptx" -OutputDirectory $outputRoot -OutputName $pptxName
     if (-not $NoPresentationHandout) {
       $handoutScript = Join-Path $PSScriptRoot "export-presentation-handout.ps1"
-      $handoutPdf = Join-Path $outputRoot "$nameBase-handout.pdf"
-      & $handoutScript -InputPptx (Join-Path $outputRoot $pptxName) -HandoutPdf $handoutPdf
+      $handoutDocx = Join-Path $outputRoot "$nameBase-handout.docx"
+      & $handoutScript -SourceQmd $source -InputPptx (Join-Path $outputRoot $pptxName) -OutputDocx $handoutDocx
       if ($LASTEXITCODE -ne 0) {
         throw "Presentation handout export failed."
       }

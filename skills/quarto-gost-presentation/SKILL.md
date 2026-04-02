@@ -25,6 +25,7 @@ presentations derived from the same source materials as the written documents.
 5. Start from `resources\reference-pptx\reference.pptx`, which is derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\presentation.tex`, `Presentation\styles.tex`, and `Presentation\title.tex`.
 6. Keep the title slide metadata aligned with the dissertation: title, organization, city/year, presenter, and supervisor should match the written materials.
 7. If a corporate or university PPTX master is required, adapt `resources\reference-pptx\reference.pptx` rather than styling each slide manually.
-8. The presentation build also produces `*-handout.pdf`, a two-slides-per-page A4 handout derived from the same PPTX in the spirit of `presentation_handout.tex`.
+8. Put speaker comments for the handout into the source QMD: use front matter `notes:` for the title slide and `::: {.notes}` blocks inside individual slides.
+9. The presentation build also produces `*-handout.docx`, a two-slides-per-page A4 handout with comments derived from the same QMD in the spirit of `presentation_handout.tex`.
 
 Read [slides.md](references/slides.md) when you need slide guidance.
