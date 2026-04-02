@@ -1,0 +1,21 @@
+---
+title: "Конверты для рассылки"
+lang: ru
+format:
+  docx:
+    reference-doc: ../../resources/reference-docs/report/reference.docx
+    toc: false
+    number-sections: false
+---
+
+# Конверты {.unnumbered}
+
+Этот файл служит заготовкой и справкой. Для реальной генерации конвертов
+используйте:
+
+`powershell -ExecutionPolicy Bypass -File scripts\build.ps1 -DocumentType envelopes -AddressList <файл.tsv>`
+
+Файл TSV должен содержать пять колонок, разделённых табуляцией:
+
+`Индекс`, `Город`, `Адрес`, `Организация`, `Адресат`
+

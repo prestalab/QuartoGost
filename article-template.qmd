@@ -1,0 +1,33 @@
+---
+title: "Название статьи"
+author:
+  - "Фамилия И. О."
+date: today
+lang: ru
+format:
+  docx:
+    reference-doc: ../../resources/reference-docs/report/reference.docx
+    toc: false
+    number-sections: true
+bibliography: ../../resources/bibliography/references.bib
+csl: ../../resources/csl/gost-r-7-0-5-2008-numeric-iaa.csl
+---
+
+# Введение
+
+Кратко опишите проблему, постановку задачи и научную новизну.
+
+# Материалы и методы
+
+Опишите используемые данные, инструменты, модели и вычислительную среду.
+
+{{< include ../common/partials/example-elements.qmd >}}
+
+# Результаты
+
+Представьте основные выводы и экспериментальные подтверждения.
+
+# Заключение
+
+Сформулируйте итоговые положения статьи.
+

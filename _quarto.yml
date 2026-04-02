@@ -1,0 +1,29 @@
+project:
+  type: default
+  output-dir: build
+
+execute:
+  echo: false
+  warning: false
+  error: true
+  cache: false
+  freeze: auto
+
+lang: ru
+
+bibliography: resources/bibliography/references.bib
+csl: resources/csl/gost-r-7-0-5-2008-numeric-iaa.csl
+
+crossref:
+  fig-title: "Рисунок"
+  tbl-title: "Таблица"
+  eq-title: "Формула"
+  sec-prefix: "раздел"
+
+format:
+  docx:
+    number-sections: true
+    toc: false
+  html:
+    code-fold: false
+
