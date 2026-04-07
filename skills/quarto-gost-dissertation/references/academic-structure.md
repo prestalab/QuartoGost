@@ -71,6 +71,8 @@
 - The cover must include the status `на правах рукописи`, author name, dissertation title, specialty code and name, sought degree, city, and year.
 - The reverse side must include organization, supervisor or consultant, opponents, leading organization, defense date and place, library, mailing date, and academic secretary name.
 - The list of publications by the author on the dissertation topic should be formatted bibliographically.
+- In this Quarto project that list should be generated automatically from `.bib` data, preferably from a dedicated file such as `resources\bibliography\author-works.bib`, with the output placed through `::: {#refs}`.
+- Grouped biblatex-style sublists from the LaTeX reference project are not reproduced directly here; if separate grouped lists are required, that is a future CSL/Lua-filter customization task.
 - The synopsis is intended for printing/duplication, and output details should follow GOST R 7.0.4 when needed.
 
 ## Shared custom styles

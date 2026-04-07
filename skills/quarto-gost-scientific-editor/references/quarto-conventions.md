@@ -18,6 +18,10 @@ Do not mention references in prose if the target object has no label.
 
 - Use `[@key]`, `[@key1; @key2]`, or the local style already present in the file.
 - Keep bibliography data in `.bib`, not as manually typed final entries.
+- In this project bibliography formatting is produced automatically by Quarto/Pandoc citeproc with a CSL file, not by `biblatex`, `biber`, or `.bst`.
+- Use `::: {#refs}` to place the generated bibliography exactly where the document needs the final list.
+- For synopsis author-publication lists, prefer a dedicated `.bib` file such as `resources\bibliography\author-works.bib` and avoid mixing those entries with unrelated external citations in the same document.
+- Treat `utf8gost71u.bst` and `ugost2008mod.bst` from the LaTeX reference project as formatting references only; direct reuse in Quarto is not supported.
 
 ### Figures and tables
 

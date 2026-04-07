@@ -86,6 +86,9 @@ QuartoGost
 |   |-- envelopes
 |   |-- study-guide
 |   `-- article
+|-- prompts
+|   |-- report-from-existing-program.md
+|   `-- espd-from-existing-program.md
 |-- skills
 |   |-- quarto-gost-workflow
 |   |-- quarto-gost-espd
@@ -714,13 +717,44 @@ $$ {#eq-energy}
 
 `resources\bibliography\references.bib`
 
+Для автореферата и других сценариев, где нужен отдельный список публикаций
+автора, используйте отдельную BibTeX-базу:
+
+`resources\bibliography\author-works.bib`
+
 Вставка ссылки:
 
 - `[@ivanov2023]`
 - `[@doe2024, c. 45]`
 - `см. [@gostdown]`
 
-Список литературы формируется автоматически при наличии `.bib` и `csl`.
+В этом проекте список литературы формируется автоматически движком
+Quarto/Pandoc citeproc по связке `.bib` + `csl`.
+
+Размещение списка в нужном месте:
+
+````
+# Список литературы {.unnumbered}
+
+::: {#refs}
+:::
+````
+
+Важно:
+
+- Quarto для DOCX и PPTX не использует `biblatex`, `biber` или BibTeX-стили
+  `.bst` напрямую;
+- файлы
+  `ref\Russian-Phd-LaTeX-Dissertation-Template\BibTeX-Styles\utf8gost71u.bst`
+  и
+  `ref\Russian-Phd-LaTeX-Dissertation-Template\BibTeX-Styles\ugost2008mod.bst`
+  можно использовать только как образец правил форматирования для переноса в
+  `CSL` или будущий Lua-фильтр;
+- для переносимого Quarto-workflow в проекте принят стиль
+  `resources\csl\gost-r-7-0-5-2008-numeric-iaa.csl`;
+- в автореферате список работ автора по теме диссертации лучше формировать из
+  отдельного файла `author-works.bib` и не смешивать его с обычными внешними
+  ссылками в том же документе.
 
 17. Ссылки на разделы
 
@@ -789,16 +823,18 @@ $$ {#eq-energy}
 21. Примеры
 
 Готовые примеры с заполненными титульными полями и демонстрацией таблиц,
-рисунков, формул, графиков и `custom-style`:
+рисунков, формул, графиков, `custom-style` и автоматической библиографии:
 
 - `examples\espd-demo\main.qmd`
 - `examples\report-demo\main.qmd`
+- `examples\dissertation-demo\main.qmd`
 - `examples\synopsis-demo\main.qmd`
 
 Команды запуска:
 
 - `build-espd-demo.cmd`
 - `build-report-demo.cmd`
+- `build-dissertation-demo.cmd`
 - `build-synopsis-demo.cmd`
 
 В этих примерах показаны:
@@ -806,8 +842,17 @@ $$ {#eq-energy}
 - заполнение реквизитов обложки через `gost:`;
 - построение графиков Julia;
 - таблицы и формулы с кросс-ссылками;
+- автоматическое формирование списка литературы через `::: {#refs}`;
+- автоматическое формирование списка публикаций автора в автореферате из
+  `resources\bibliography\author-works.bib`;
 - использование `custom-style="UnnumberedHeadingOne"` и
   `custom-style="MyCustomStyle"`.
+
+Готовые промпты для AI-агентов, которым нужно подготовить документацию по
+уже существующей программе:
+
+- `prompts\report-from-existing-program.md`
+- `prompts\espd-from-existing-program.md`
 
 22. Skills для AI-агентов
 

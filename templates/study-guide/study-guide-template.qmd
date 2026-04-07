@@ -77,7 +77,8 @@ quarto_gost_activate!(:study_guide)
 
 # Список использованных источников {.unnumbered}
 
-Используйте `.bib` и цитирование в тексте, например [@ivanov2023].
+::: {#refs}
+:::
 
 # Приложение А {.unnumbered}
 

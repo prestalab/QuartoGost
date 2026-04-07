@@ -112,8 +112,7 @@ quarto_gost_activate!(:report)
 
 # Список использованных источников {.unnumbered}
 
-::: {.callout-note appearance="minimal"}
-При сборке DOCX список литературы формируется автоматически по файлу `.bib`.
+::: {#refs}
 :::
 
 # Приложение А {.unnumbered}

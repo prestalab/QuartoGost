@@ -43,6 +43,8 @@ this repository.
 
 - Keep section names close to the relevant GOST structure.
 - Use cross-reference labels for figures, tables, equations, and sections.
-- Put bibliography entries in `.bib` instead of formatting the list manually.
+- Let Quarto/Pandoc citeproc build bibliography blocks automatically from `.bib` + `csl`; do not format final source lists by hand in `qmd`.
+- Place bibliography output explicitly with `::: {#refs}` when the section title or location matters.
+- Treat LaTeX `.bst` files from the reference dissertation project as style references only: Quarto does not use them directly for DOCX/PPTX output.
 - Treat `ref\Russian-Phd-LaTeX-Dissertation-Template\Documents\*.md` as the local normative extraction source for skills work in this repo.
 - Use the shared custom-style contract from [custom-styles.md](references/custom-styles.md) so style names stay stable across document families.

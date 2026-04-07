@@ -95,7 +95,8 @@ quarto_gost_activate!(:dissertation)
 
 # Список литературы {.unnumbered}
 
-См. примеры ссылок в [@ivanov2023; @doe2024].
+::: {#refs}
+:::
 
 # Список иллюстративного материала {.unnumbered}
 

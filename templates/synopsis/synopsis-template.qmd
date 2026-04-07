@@ -40,7 +40,9 @@ format:
     reference-doc: ../../resources/reference-docs/synopsis/reference.docx
     toc: false
     number-sections: false
-bibliography: ../../resources/bibliography/references.bib
+bibliography:
+  - ../../resources/bibliography/author-works.bib
+  - ../../resources/bibliography/references.bib
 csl: ../../resources/csl/gost-r-7-0-5-2008-numeric-iaa.csl
 ---
 
@@ -104,5 +106,20 @@ quarto_gost_activate!(:synopsis)
 
 # Основные публикации автора по теме диссертации {.unnumbered}
 
-1. Фамилия И. О. Название статьи...
-2. Фамилия И. О. Название доклада...
+<!--
+Для автоматического формирования списка публикаций автора:
+- храните работы автора в отдельном .bib, например
+  resources\bibliography\author-works.bib;
+- либо процитируйте нужные записи в этом разделе, либо добавьте их в nocite:
+
+nocite:
+  - '@author-work-1'
+  - '@author-work-2'
+
+Quarto/Pandoc формирует здесь единый список по cited/nocited записям.
+Если нужен отдельный список работ автора, не смешивайте его с обычными
+ссылками на внешние источники в этом документе.
+-->
+
+::: {#refs}
+:::
