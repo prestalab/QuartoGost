@@ -30,6 +30,7 @@ this repository.
 11. For charts, follow the shared plotting contract in [plotting.md](references/plotting.md).
 12. For `espd` and `report`, prefer filling title and approval data through the `gost:` block in QMD front matter rather than editing the DOCX cover by hand.
 13. When a `reference.docx` must be refreshed, update only the document family you are working on by using `scripts\update-reference-docs.ps1 -DocumentType <type>` instead of regenerating all reference templates.
+14. When the task is specifically editorial, structural, or wording-related inside `qmd`, use `quarto-gost-scientific-editor` as the common text-editing layer and then apply the document-family skill only for format-specific constraints.
 
 ## Build rules
 

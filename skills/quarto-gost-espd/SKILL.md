@@ -18,16 +18,14 @@ instructions, technical descriptions, and similar text documents.
 
 ## Rules
 
-1. Keep service pages in `resources\reference-docs\espd\reference.docx`.
-2. Do not remove `%MAINTEXT%` or `%TOC%` from the reference DOCX.
-3. Structure the main body by numbered sections, subsections, points, subpoints, and appendices according to GOST 2.105-95 section 4.1.
-4. Use labels for figures, tables, equations, and sections.
-5. Use Julia blocks for computed tables or charts.
-6. Preserve the logic of title sheet, approval sheet, and change-registration sheet when the document type requires them.
-7. When a document is large, it may be split into parts or books; keep numbering and naming consistent across those parts.
-8. Keep charts in the grayscale document profile and preserve the exported `svg` files for reuse in technical appendices and related documents.
-9. Fill cover and approval-sheet requisites through the `gost:` block in front matter so `%DOC_TITLE%`, `%DOC_CODE%`, `%APPROVER_TITLE%` and related placeholders are populated automatically.
-10. Keep placeholders only for variable requisites such as names, positions, dates, codes, document designations, and approval data; do not replace static form text like ministry names, `УТВЕРЖДАЮ`, `СОГЛАСОВАНО`, or signature underlines with placeholders.
+1. Use `quarto-gost-scientific-editor` for general text editing, captions, citations, and Quarto mechanics; this skill is only for ESPD-specific constraints.
+2. Keep service pages in `resources\reference-docs\espd\reference.docx`.
+3. Do not remove `%MAINTEXT%` or `%TOC%` from the reference DOCX.
+4. Structure the main body by numbered sections, subsections, points, subpoints, and appendices according to GOST 2.105-95 section 4.1.
+5. Preserve the logic of title sheet, approval sheet, and change-registration sheet when the document type requires them.
+6. When a document is large, it may be split into parts or books; keep numbering and naming consistent across those parts.
+7. Fill cover and approval-sheet requisites through the `gost:` block in front matter so `%DOC_TITLE%`, `%DOC_CODE%`, `%APPROVER_TITLE%` and related placeholders are populated automatically.
+8. Keep placeholders only for variable requisites such as names, positions, dates, codes, document designations, and approval data; do not replace static form text like ministry names, `УТВЕРЖДАЮ`, `СОГЛАСОВАНО`, or signature underlines with placeholders.
 
 Read [required-sections.md](references/required-sections.md) when you need a
 baseline structure.

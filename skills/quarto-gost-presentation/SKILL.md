@@ -18,14 +18,13 @@ presentations derived from the same source materials as the written documents.
 
 ## Rules
 
-1. Keep one main point per slide.
-2. Prefer figures, schemes, and short evidence-heavy bullets over dense text.
-3. Use Julia plots for reproducible charts.
-4. For charts, use the shared plotting helper so presentation figures stay in the color academic scheme.
-5. Start from `resources\reference-pptx\reference.pptx`, which is derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\presentation.tex`, `Presentation\styles.tex`, and `Presentation\title.tex`.
-6. Keep the title slide metadata aligned with the dissertation: title, organization, city/year, presenter, and supervisor should match the written materials.
-7. If a corporate or university PPTX master is required, adapt `resources\reference-pptx\reference.pptx` rather than styling each slide manually.
-8. Put speaker comments for the handout into the source QMD: use front matter `notes:` for the title slide and `::: {.notes}` blocks inside individual slides.
-9. The presentation build also produces `*-handout.docx`, a two-slides-per-page A4 handout with comments derived from the same QMD in the spirit of `presentation_handout.tex`.
+1. Use `quarto-gost-scientific-editor` for wording, slide notes, and editorial cleanup; this skill is only for presentation-specific slide and handout constraints.
+2. Keep one main point per slide.
+3. Prefer figures, schemes, and short evidence-heavy bullets over dense text.
+4. Start from `resources\reference-pptx\reference.pptx`, which is derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\presentation.tex`, `Presentation\styles.tex`, and `Presentation\title.tex`.
+5. Keep the title slide metadata aligned with the dissertation: title, organization, city/year, presenter, and supervisor should match the written materials.
+6. If a corporate or university PPTX master is required, adapt `resources\reference-pptx\reference.pptx` rather than styling each slide manually.
+7. Put speaker comments for the handout into the source QMD: use front matter `notes:` for the title slide and `::: {.notes}` blocks inside individual slides.
+8. The presentation build also produces `*-handout.docx`, a two-slides-per-page A4 handout with comments derived from the same QMD in the spirit of `presentation_handout.tex`.
 
 Read [slides.md](references/slides.md) when you need slide guidance.

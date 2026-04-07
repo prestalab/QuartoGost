@@ -22,15 +22,13 @@ Synopsis:
 
 ## Rules
 
-1. Follow the structure in [academic-structure.md](references/academic-structure.md).
-2. Keep the introduction aligned with the required academic elements from GOST R 7.0.11-2011.
-3. Present defense statements clearly and concretely.
-4. Put literature into `.bib` when possible.
+1. Use `quarto-gost-scientific-editor` for general text editing, bibliography calls, captions, and Quarto mechanics; this skill is only for dissertation- and synopsis-specific academic constraints.
+2. Follow the structure in [academic-structure.md](references/academic-structure.md).
+3. Keep the introduction aligned with the required academic elements from GOST R 7.0.11-2011.
+4. Present defense statements clearly and concretely.
 5. Use appendices for supporting evidence, acts, listings, and supplementary tables.
-6. Keep typography, margins, chapter starts, page numbering, and placement of illustrations/tables/formulas aligned with the extracted standard notes.
-7. For the synopsis, check both the cover and reverse-side mandatory fields before finalizing.
-8. Use the grayscale plotting profile for dissertation and synopsis figures unless the user explicitly requests another submission format.
-9. For the synopsis, fill cover and reverse-side fields through the `synopsis:` block in front matter; the project maps those values into the A5 reference DOCX derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\synopsis.tex`.
-10. For the dissertation, fill title-page fields through the `dissertation:` block in front matter; the project maps those values into the A4 reference DOCX derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\dissertation.tex`, `Dissertation\setup.tex`, and `Dissertation\title.tex`.
+6. For the synopsis, check both the cover and reverse-side mandatory fields before finalizing.
+7. For the synopsis, fill cover and reverse-side fields through the `synopsis:` block in front matter; the project maps those values into the A5 reference DOCX derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\synopsis.tex`.
+8. For the dissertation, fill title-page fields through the `dissertation:` block in front matter; the project maps those values into the A4 reference DOCX derived from `ref\Russian-Phd-LaTeX-Dissertation-Template\dissertation.tex`, `Dissertation\setup.tex`, and `Dissertation\title.tex`.
 
 Before finalizing, run [norm-control.md](references/norm-control.md).

@@ -94,7 +94,8 @@ QuartoGost
 |   |-- quarto-gost-presentation
 |   |-- quarto-gost-envelopes
 |   |-- quarto-gost-study-guide
-|   `-- quarto-gost-article
+|   |-- quarto-gost-article
+|   `-- quarto-gost-scientific-editor
 `-- ref
 
 4. Требования к окружению под Windows
@@ -823,11 +824,22 @@ $$ {#eq-energy}
 - `quarto-gost-presentation`
   подготовка презентаций;
 - `quarto-gost-envelopes`
-  подготовка конвертов для рассылки.
-- `quarto-gost-article`
-  подготовка статей и других расширяемых текстовых форматов.
+  подготовка конвертов для рассылки;
 - `quarto-gost-study-guide`
-  подготовка учебных пособий.
+  подготовка учебных пособий;
+- `quarto-gost-article`
+  подготовка статей и других расширяемых текстовых форматов;
+- `quarto-gost-scientific-editor`
+  редакторская проверка и доработка научных текстов прямо в `qmd`-источниках.
+
+Рекомендуемая схема:
+
+- `quarto-gost-scientific-editor` использовать как общий редакторский слой;
+- профильные skills (`report`, `dissertation`, `espd`, `study-guide`,
+  `presentation`) использовать для норм и ограничений конкретного типа
+  документа;
+- `quarto-gost-workflow` использовать как верхнеуровневый навык для выбора
+  шаблона, сборки и маршрута работы по проекту.
 
 Каждый навык содержит:
 
